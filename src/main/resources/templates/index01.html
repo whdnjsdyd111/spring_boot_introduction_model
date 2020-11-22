@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <title>top page</title>
+    <style>
+        h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            color: gray;
+        }
+        body {
+            font-size: 13pt;
+            color: gray;
+            margin: 5px 25px;
+        }
+        pre {
+            border: solid 3px #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 th:text="#{content.message}">Helo page</h1>
+<pre th:text="${data}"></pre>
+</body>
+</html>
